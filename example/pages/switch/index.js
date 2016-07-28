@@ -26,7 +26,7 @@ export default class ButtonDemo extends React.Component {
               <Title text="设置文字/图标"></Title>
               <Switch size="normal" checkedChildren="on" uncheckedChildren="off"/>
               <Switch size="normal" defaultChecked="false" checkedChildren="开" uncheckedChildren="关"/>
-              <Switch size="normal" defaultChecked="false" checkedChildren=<Icon className="aa"/> uncheckedChildren=<Icon className="aa"/>/>
+              <Switch size="normal" defaultChecked="false" checkedChildren=<Icon value="fi-ok"/> uncheckedChildren=<Icon value="fi-close"/>/>
 
               <Title text="禁用（disabled）"></Title>
               <Switch size="normal" defaultChecked="false" disabled="true" checkedChildren="开" uncheckedChildren="关"/>
