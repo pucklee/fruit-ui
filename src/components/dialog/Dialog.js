@@ -24,10 +24,10 @@ export default class Dialog extends React.Component {
             if (!onOk2) {
                 onOk2 = onOk;
             }
-            return <a 
-                key={1} 
-                href="javascript:;" 
-                onClick={onOk2} 
+            return <a
+                key={1}
+                href="javascript:;"
+                onClick={onOk2}
                 className="f-dialog-btn"
                 style={ color ? {color:color} : {}}
                 >{text}</a>
@@ -35,10 +35,10 @@ export default class Dialog extends React.Component {
         return footer.map((action, i) => {
             const {onClick ,color ,text} = action;
             return (
-                <a 
-                key={i} 
-                href="javascript:;" 
-                onClick={onClick} 
+                <a
+                key={i}
+                href="javascript:;"
+                onClick={onClick}
                 className="f-dialog-btn"
                 style={ color ? {color:color} : {}}
                 >{text}</a>
@@ -56,8 +56,8 @@ export default class Dialog extends React.Component {
             <div style={{display: show ? 'block' : 'none'}}>
                 <Mask show={true}></Mask>
                 <div className={cls}>
-                    <div className="f-dialog-hd"> 
-                        <strong className="f-dialog-title">{title}</strong> 
+                    <div className="f-dialog-hd">
+                        <strong className="f-dialog-title">{title}</strong>
                     </div>
                     <div className="f-dialog-bd">
                         {children}
@@ -68,6 +68,6 @@ export default class Dialog extends React.Component {
                 </div>
             </div>
         );
-        
+
     }
 }

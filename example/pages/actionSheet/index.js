@@ -23,7 +23,7 @@ export default class ActionSheetDemo extends React.Component {
     return (
       <Page className="actionSheet" title="actionSheet" spacing>
         <Title text="默认" first></Title>
-        <Button type="primary" onClick={this.handleClick} block>actionSheet</Button>
+        <Button type="info" onClick={this.handleClick} block>actionSheet</Button>
 
         <ActionSheet show={this.state.show1} onRequestClose={this.cancel}>
           <ul>

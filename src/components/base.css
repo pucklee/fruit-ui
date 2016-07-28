@@ -127,3 +127,11 @@ em,i {
 100%{-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}}
 @keyframes spin{0%{-moz-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
 100%{-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}}
+
+@ColorWhite: #ffffff;
+@ColorBlack: #000000;
+@ColorFE: #fefefe;
+@Color: #000000;
+@ColorAB: #ababab;
+@ColorDF: #dfdfdf;
+@ColorF1: #f1f1f1;

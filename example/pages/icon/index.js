@@ -11,7 +11,7 @@ export default class IconDemo extends React.Component {
     render() {
         return (
             <Page className="icon-layout" title="Icon" spacing>
-            	<Title text="All"></Title>
+            	<Title text="All" first></Title>
             	 	<Row className="row">
                         <Col><Icon value="fi-ok"></Icon></Col>
     					<Col><Icon value="fi-close"></Icon></Col>

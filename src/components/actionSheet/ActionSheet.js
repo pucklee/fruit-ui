@@ -27,7 +27,7 @@ export default class ActionSheet extends React.Component {
         <Mask
           show={show}
           transparent={false}
-          conceal={onRequestClose}
+          onClick={onRequestClose}
         ></Mask>
         <div className="f-actionSheet-list">
           {children}

@@ -28,7 +28,7 @@ export default class DialogDemo extends React.Component {
 
         onOk(number){
           console.log('ok...',number);
-          
+
         }
       }
 		}
@@ -49,12 +49,12 @@ export default class DialogDemo extends React.Component {
           show2 ,
           show3 ,
           show4 ,
-          show5 
+          show5
         } = this.state;
 
         return (
-            <Page className="dialog-layout" title="Dialog" spacing>
-            	<Title text="没有标题"></Title>
+            <Page className="dialog-lay   out" title="Dialog" spacing>
+            	<Title text="没有标题" first></Title>
             	<Button type="info" onClick={() =>this.dialogClickHandle(1)}>1个按钮</Button>
               <Button type="primary" onClick={() =>this.dialogClickHandle(2)}>2个按钮</Button>
               <Button type="warn" onClick={() =>this.dialogClickHandle(3)}>3个按钮+自定义按钮颜色</Button>
@@ -66,14 +66,14 @@ export default class DialogDemo extends React.Component {
               <Button type="danger" onClick={() =>this.dialogClickHandle(5)}>1个按钮</Button>
 
 
-        	 		<Dialog 
+        	 		<Dialog
                 show={show1}
                 onOk={() => self.eventHandle.onCancel(1)}
               >
         	 			确认要提交吗
         	 		</Dialog>
 
-              <Dialog 
+              <Dialog
                 show={show2}
                 onCancel={() => self.eventHandle.onCancel(2)}
                 onOk={() => self.eventHandle.onOk(2)}
@@ -87,7 +87,7 @@ export default class DialogDemo extends React.Component {
               </Dialog>
 
 
-              <Dialog 
+              <Dialog
                 show={show3}
                 onCancel={() => self.eventHandle.onCancel(3)}
                 onOk={() => self.eventHandle.onOk(3)}
@@ -100,7 +100,7 @@ export default class DialogDemo extends React.Component {
                 <p>我的测试</p>
               </Dialog>
 
-              <Dialog 
+              <Dialog
                 show={show4}
                 title="请求确认"
                 onOk={() => self.eventHandle.onCancel(4)}
@@ -108,7 +108,7 @@ export default class DialogDemo extends React.Component {
                 确认要提交吗？
               </Dialog>
 
-              <Dialog 
+              <Dialog
                 show={show5}
                 title="详细信息"
                 footer={[{text:'关闭',onClick:() => self.eventHandle.onCancel(5)}]}
