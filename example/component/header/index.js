@@ -6,19 +6,20 @@ import './styles.less';
 export default class Header extends React.Component {
   static propTypes = {
     title: React.PropTypes.string,
-    backBtn: React.PropTypes.string,
-    menuBtn: React.PropTypes.string,
     menuClick: React.PropTypes.func,
     backwards: React.PropTypes.func
   }
 
   static defaultProps = {
     title: document.title,
+    backBtn: null,
+    menuBtn: null,
     menuClick: null,
     backwards: null
   }
 
   backAction = () => {
+    const {backwards} = this.props;
     if(backwards){
       backwards()
     }else{
@@ -27,6 +28,7 @@ export default class Header extends React.Component {
   }
 
   menuAction = () => {
+    const {menuClick} = this.props;
     if(menuClick){
       menuClick()
     }
@@ -39,15 +41,23 @@ export default class Header extends React.Component {
 
     return (
       <header className={className}>
-        <div className="f-header-left" onClick={this.backAction}>
-          {backBtn}
-        </div>
+        {
+          backBtn ?
+          <div className="f-header-left" onClick={this.backAction}>
+            {backBtn}
+          </div> :
+          null
+        }
         <h1 className="f-header-title">
           {title}
         </h1>
-        <div className="f-header-right" onClick={this.menuAction}>
-          {menuBtn}
-        </div>
+        {
+          menuBtn ?
+          <div className="f-header-right" onClick={this.menuAction}>
+            {menuBtn}
+          </div> :
+          null
+        }
       </header>
     );
   }

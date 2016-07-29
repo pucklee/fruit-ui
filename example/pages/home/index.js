@@ -42,6 +42,12 @@ export default class Home extends React.Component {
                             <ColBody className="r-name">switch</ColBody>
                         </Row>
                     </a>
+                    <a href="#numberBox">
+                        <Row className="row">
+                            <ColHead className="r-icon"><img src={IconSwitch}/></ColHead>
+                            <ColBody className="r-name">numberBox</ColBody>
+                        </Row>
+                    </a>
                     <a href="#icon">
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconIcon}/></ColHead>

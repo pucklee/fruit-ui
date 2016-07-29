@@ -7,7 +7,7 @@ import Page from '../../component/page';
 import Title from '../../component/title';
 import './style.less';
 
-export default class ButtonDemo extends React.Component {
+export default class SwitchDemo extends React.Component {
     state = {
       switched: 'false'
     };

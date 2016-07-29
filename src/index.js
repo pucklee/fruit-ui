@@ -6,6 +6,7 @@ import {Switch} from './components/switch';
 import {SearchBar} from './components/searchBar';
 import {Carousel} from './components/carousel';
 import {Dialog} from './components/dialog';
+import {NumberBox} from './components/numberBox';
 import {ActionSheet} from './components/actionSheet';
 import {Row,Col,ColHead,ColBody,ColFoot} from './components/grid';
 
@@ -24,11 +25,13 @@ import './components/message/styles.less';
 import './components/mask/styles.less';
 import './components/dialog/styles.less';
 import './components/actionSheet/styles.less';
+import './components/numberBox/styles.less';
 
 export default {
     Button,
     SearchBar,
     Switch,
+    NumberBox,
     Icon,
     Carousel,
     Row,

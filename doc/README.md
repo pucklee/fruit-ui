@@ -29,4 +29,3 @@ react-ui 文档统一编辑在`doc/source/api/index.md`,语法为markdown
 ### 禁用状态
 ```
 ![image](https://cloud.githubusercontent.com/assets/9276376/17209112/02911be4-54ee-11e6-9412-e9d92be2feda.png)
-
