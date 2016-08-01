@@ -1,5 +1,5 @@
-# react-ionic
-基于react维护的一套ionic风格的可复用组件库
+# fruit-ui
+基于react维护的一套移动端可复用组件库
 
 
 ## Installation
